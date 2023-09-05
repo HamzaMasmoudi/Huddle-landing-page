@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("/images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  fill: white;
+  height: 32px;
+  width: 32px;
+}
+
+/*
+Main Code
+*/
+nav {
+  min-height: 10vh;
+  margin-top: 5.3rem;
+}
+nav img {
+  width: 21.2rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+main #image-section {
+  margin-top: 6rem;
+}
+main #text-section {
+  display: flex;
+  flex-direction: column;
+}
+main #text-section ul {
+  margin-left: 5.4rem;
+}
+main #text-section ul li h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 10.2rem;
+  margin-bottom: 2rem;
+}
+main #text-section ul li p {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.6rem;
+  margin-right: 1rem;
+}
+main #text-section ul li button {
+  margin-top: 2.5rem;
+  padding: 1.6rem 6.2rem;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 2rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  box-shadow: 3px 3px 20px rgb(65, 60, 60);
+}
+main #text-section ul li button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+footer svg :hover {
+  fill: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1237px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 1064px) {
+  body {
+    background-image: url("/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main #text-section ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  main #text-section ul li p {
+    width: 70%;
+    margin: 0rem auto;
+  }
+  main #text-section ul li button {
+    padding: 1.6rem 8rem;
+  }
+  footer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 792px) {
+  #image-section {
+    display: flex;
+    justify-content: center;
+  }
+  #image-section img {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
